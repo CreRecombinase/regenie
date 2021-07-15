@@ -9,5 +9,5 @@ before_script:
   
 regenie:
   script:
-    - docker build -t registry.code.roche.com/hug/regenie/regenie:latest ./Dockerfile_mkl
+    - docker build -t registry.code.roche.com/hug/regenie/regenie:latest -f ./Dockerfile_mkl
     - docker push  registry.code.roche.com/hug/regenie/regenie:latest
